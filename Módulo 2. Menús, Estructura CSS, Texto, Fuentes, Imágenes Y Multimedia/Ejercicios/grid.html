@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            /* display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px; */
+            background-color: #2196F3;
+            padding: 10px;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-row-gap: 50px;
+            grid-column-gap: 10px; */
+            
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid #2196F3;
+        }
+
+        .item1 {
+            /* grid-row-start: 2;
+            grid-row-end: 7; */
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+            grid-row: 2 / span 2;
+            /* grid-column: span 2; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid-row Property</h1>
+
+    <p>Use the <em>grid-row</em> property to specify on which row-line to start the item, and which row-line to end the
+        item.</p>
+    <p>Item1 will start on row-line 1, and end on row-line 3:</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item1">7</div>
+        <div class="item2">8</div>
+        <div class="item3">9</div>
+        <div class="item4">10</div>
+        <div class="item5">11</div>
+        <div class="item6">12</div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<html lang="es">
+
+<head>
+  <title>HTML/CSS Alumno</title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="estilo_alumno.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav class="nav">
+      <ul class="menu">
+        <li class="menu__item"><a class="menu__link" href="index.html">INICIO</a></li>
+        <li class="menu__item"><a class="menu__link" href="alumno.html">ALUMNO</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://9elements.com/bem-cheat-sheet/">EJEMPLO 1</a></li>
+        <li class="menu__item"><a class="menu__link" href="https://lawsofux.com/">EJEMPLO 2</a></li>
+      </ul>
+    </nav>
+
+    <section class="content">
+      <article class="content__main">
+
+        <!-- video local incrustado -->
+        <video class="content__media content__media--video poster="video.jpg" controls>
+          <source src="video/MOOC.webm" type="video/webm">
+          <source src="video/MOOC.mp4" type="video/mp4">
+          <source src="video/MOOC.mov" type="video/mov">
+          <source src="video/MOOC.ogv" type="video/ogv">
+        </video>
+
+        <!-- iframe -->
+        <iframe class="content__media content__media--website" src="https://www.caniuse.com" frameborder="0"></iframe>
+
+        <!-- video de youtube incrustado -->
+        <iframe class="content__media content__media--youtube" src="https://www.youtube.com/embed/IvUU8joBb1Q" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+
+      </article>
+
+      <aside class="content__aside">
+        <h1 class="content__aside-title">aside</h1>
+        <p class="content__aside-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis
+          aspernatur tempora voluptas omnis blanditiis est, explicabo accusantium eaque error commodi at cum atque animi
+          porro. Aperiam reiciendis ab soluta fugit voluptatem tempore nisi mollitia, vel molestiae expedita,
+          praesentium cumque incidunt aut earum facilis voluptate nemo error neque nulla unde. Fugit nulla deserunt
+          perferendis ad, minus et, expedita odit corrupti porro officiis itaque quia, voluptatem hic officia temporibus
+          magnam in architecto labore.</p>
+      </aside>
+    </section>
+
+    <footer class="footer">&copy; <a href="https://mijailhernandez.neocities.org/miriadax/index.html">Mijail
+        Hernandez</a></footer>
+
+  </div>
+</body>
+
+</html>

@@ -1,8 +1,9 @@
-# Desarrollo Frontend con HTML, CSS y Javascript (10.ª edición) - MiriadaX
+Desarrollo Frontend con HTML, CSS y Javascript (10.ª edición) - MiriadaX
+===
 
-## CSS
+# CSS
 
-### :arrow_forward: Propiedades grid-column y grid-row
+## :arrow_forward: Propiedades grid-column y grid-row
 
 A veces necesitamos definir la posición y la extensión de un elemento ( ítem ) dentro del contenedor grid. 
 Por ejemplo para decir que el elemento se sitúa entre la **segunda y la tercera línea vertical** y **entre la segunda y la tercera línea horizontal** tenemos que escribir estas reglas:
@@ -35,7 +36,7 @@ También podemos utilizar la palabra clave span ( se extiende ). Por ejemplo spa
 }
 ```
 
-### :arrow_forward: Propiedad grid-area
+## :arrow_forward: Propiedad grid-area
 a propiedad grid-area es una manera abreviada para definir la posición y la extensión de un ítem dentro del contenedor grid. La sintaxis es la siguiente:
 ```css
 .item{
@@ -69,7 +70,7 @@ Pero la propiedad grid-area puede tener una sintaxis alternativa:
 }
 ```
 
-## Javascript
+# Javascript
 
 **Arguments**: el array de parámetros.
 - Una función tiene un array de nombres **arguments**.
@@ -83,7 +84,7 @@ greet("Good mornin", "Peter"); // "Good morning Peter, how are you?"
 greet("Hello", "Peter"); // "Hello peter, how are you?"
 ```
 
-### Funciones como objetos
+## Funciones como objetos
 - Pueden asignarse a variables, propiedades, pasarse como parámetros, etc.
 - Literal de función: **function(<argumentos>){<sentencias>}
   - Construye un objeto de tipo función que no tiene nombre.
@@ -99,7 +100,7 @@ greet("Good mornin", "Peter");  // "Good morning Peter, how are you?"
 greet("Hello", "Peter");        // "Hello peter, how are you?"
 ```
 
-### Parámetros por defecto
+## Parámetros por defecto
 - El valor por defecto se utiliza en la invocación, cuando ese parámetro sea **undefined**.
 ```javascript
 const greet = function(greeting="Hi", person="my friend"){
@@ -110,7 +111,7 @@ greet("Hello");  // "Hello my friend, how are you?"
 greet();        // "Hi my friend, how are you?"
 ```
 
-### Fat arrow function (notación fleca) (ES6)
+## Fat arrow function (notación fleca) (ES6)
 - Function se sustituye por los paréntesis y la fecha **=>**.
 - **Nunca** puede modificar el contexto. El objeto **this** tiene visibilidad sintáctica siempre que se utiliza.
 - **Solo** se pueden utilizan para **programación funcional**. **NO** pueden utilizarse como constructores de objeto (usar en ese caso funciones tradicionales).
@@ -132,7 +133,7 @@ const square = x => x*x;
 const say_hi = () => "Hi, how are you?";
 ```
 
-### Declaraciones locales de una función y ámbito
+## Declaraciones locales de una función y ámbito
 Las variables y funciones tienen visibilidad sintáctica en Javascript.
 - Son visibles dentro del ámbito donde se declaran.
 - Las funciones son **visibles** antes de su declaración (igual que las variables *var*).
@@ -146,7 +147,7 @@ Variables y funciones externas son visibles en el bloque de la función.
 
 <img src="Recursos/js_es6_declaraciones_locales_funcion_ambito.png" width="40%" />
 
-### Objetos, propiedades, métodos, DOM, eventos e interacción
+## Objetos, propiedades, métodos, DOM, eventos e interacción
 
 **Objetos**
 - Agrupación de:
@@ -177,7 +178,7 @@ Variables y funciones externas son visibles en el bloque de la función.
   - Tiene una caja visual asociada
   - **document.getElementByID("id_x")**: método que obtiene el objeto DOM del elemento HTML con atributo **id="id_x"**.
 
-### Eventos y manejadores
+## Eventos y manejadores
 - **Evento**: indica la ocurrencia de un hecho que es atendido por un *manejador* (*handler*).
 - **Manejador de un evento**: bloque de código o función asociada al evento (se ejecuta al ocurrer este).
 - Un programa Javascript se guía por eventos (*event driven*).
@@ -197,7 +198,7 @@ Variables y funciones externas son visibles en el bloque de la función.
 <img src="Recursos/js_eventos_manejadores.png" width="80%"/>
 <img src="Recursos/js_bubbling.png" width="80%"/>
 
-### Literal de objetos
+## Literal de objetos
 - Siempre se tienen que inicializar.
 - Recomendable asignar nombres diferentes.
 - Operador punto: **objeto.propiedad**
@@ -226,7 +227,7 @@ pelicula.pais = "EEUU"; // Crear la propiedad ya que no existe.
 delete pelicula.estreno; // Elimina la propiedad estreno
 "estreno" in pelicula; // Devuelve true o fase según exista o no la propiedad.
 ```
-### MVC (Modelo-Vista-Controlador)
+## MVC (Modelo-Vista-Controlador)
 - Patrón de diseño que se puede aplicar en el cliente o en el servidor.
 - **Evento**: mueve la aplicación ejecutando controladores (manejadores de eventos).
   - Clicks, texto, temporizadores, etc.
@@ -255,7 +256,7 @@ multi-línea.`
 <img src="Recursos/mvc_03.png" width="90%" />
 <img src="Recursos/mvc_04.png" width="90%" />
 
-### JSON (JavaScript Object Notation)
+## JSON (JavaScript Object Notation)
 
 - Serialización de datos
   - Transformación reversible de valores en un string equivalente.
@@ -288,7 +289,7 @@ JSON.stringify({a:27, b:"hola"}); // '{"a":27,"b":"hola"}'
 ```
 <img src="Recursos/json.png" width="40%" />
 
-### Boolean y operadores relacionados: !, && y ||, ===, !==, etc.
+## Boolean y operadores relacionados: !, && y ||, ===, !==, etc.
 - **Bolean**: true o false
 - **Boolean(a)** es una función que convierte otros valores a boolean.
   - **0, -0, NaN, null, undefined, "", '', ``** se convierte a **false** y el resto a **true**.
@@ -358,7 +359,7 @@ false ? 1 : 7;  // 7
 
 - Igualdad débidl **==, !=**. Se recomienda **no utilizarlas**.
 
-### Almacenamiento en cliente: localStorage, sessionStorage
+## Almacenamiento en cliente: localStorage, sessionStorage
 - Almacenar datos de forma persistente en el navegador cliente.
 - Objetos Windows: **localStorage** y **sessionStorage**.
   - Solo permiten crear propiedades que guarden **string**.
@@ -387,15 +388,109 @@ localStorage.clear();                 // Elimina todos los contenedores.
     - Seguridad: un programa solo confía en programas del mismo servidor.
     - Modularidad: cada servidor tiene espacios de nombres diferentes.
 
-## Bibliografía
+## Tipos primitivos, clases predefinidas, typeof y belongsto y métodos propios y heredados
+```Tipos primitivos```
+- Number
+- String
+- Boolean
+- Sýmbol (**nuevo en ES6**)
+  - Claves de hash
+  - Se crean con **Symbol()**
+- Undefined
 
-### CSS
+```Clase Object```
+- Un objeto es una agregación de propiedades y métodos.
+- Se agrupan en **clases**: Object, Array, Date, Function...
+  - Objeto **null**: valor especial que representa objeto nulo
+
+```Operador typeof```
+- Determina a qué tipo pertenece un elemento de JavaScript.
+- Todos los objetos (de cualquier clase) devuelven **object**, savo las funciones.
+
+<img src="Recursos/clases_predefinidas.png" width="50%" />
+
+```Clases predefinidas```
+- Object
+- Array
+- Date
+- Function
+- RegExp
+- Error
+- Number, String y Boolean
+- **Nuevas**: Promise, Map, Set, Typed Arrays (introducidas en ES6+)
+
+### Jerarquías de clases, constructores y literales
+- La clase Object es la raíz de la que derivan todas las clases de Javascript.
+  - Las demás clases predefinidas extienden la clase Object.
+    - Una clase **hereda** los **métodos** y **propiedades** de la clase que extiende y añade otros nuevos.
+  - JavaScript permite definir nuevas clases, además de las predefinidas existentes.
+
+```Clase```
+- Una clase es el conjunto de objetos del mismo tipo creados con su constructor.
+  - El constructor tiene el mismo nombre de la clase y crea objetos con el operador **new**: new Object(), new Date(), new Array(), new Function()...
+- Algunas clases predefinidas tienen **literales**:
+ ```javascript
+ // Literal de objetos
+ {a:3, b:"hola"};     // { } Crea un objeto vacío igual que new Object()
+
+ // Literal de arrays
+ [1, 2, 3];           // [ ] Crea un array vacío igual que new Array()
+
+ // Literal de función
+ function (x) { ... } // (x) => { ... } el literal de funciones arrow de ES6
+
+ // Literales de Regexp
+ /(hola)+$/
+ ```
+ - Valores de los tipos primitivos **number, string y boolean** se traducen automáticamente a objetos de **Number, String** o **Boolean** al invocar métodos en dichos valores.
+
+```Herencia y operador instanceof```
+- Todas las clases de JavaScript **derivan de la clase Object** (la extienden).
+  - Los objetos de una clase pertenecen también a la clase padre de la que derivan.
+- **instanceof** determina si un valor pertenece a una clase.
+
+```javascript
+({}) instanceof Object;     // true - { } es un objeto aunque esté vacío.
+({}) instanceof Array;      // false - { } no es un Array, pertenece solo a Object.
+
+[] instanceof Array;        // true - [] es un array vacío
+[] instanceof Object;       // true - [] Array deriva de object
+
+(function(){}) instanceof Function;   // true - function(){} es una función vacía
+(() => {})) instanceof Function;      // true - () => {} es una función vacía definida con "=>"
+
+""  instanceof String;            // false - "" es un tipo primitivo (no son objetos)
+new String("") instanceof String; // true - new String("") pertenece a la clase String.
+```
+
+```Métodos heredados```
+- **Método**: es una función invocable sobre un objeto con el operador punto ".".
+  - Ejemplo: **new Date().toString()**
+- Un objeto **hereda** las propiedades y métodos de su clase.
+  - Ejemplo. Los objetos de la **clase Date** heredan métodos como:
+    - toString(), getDay(), getFullYear(), getHours(), getMinutes(), etc.
+
+<img src="Recursos/metodos_heredados.png" width="60%" />
+
+```Métodos propios```
+- Una **función** asignada a una **propiedad** de un objeto, crea un **método**.
+  - Este método, denominado **propio**, solo se puede invocar el **objeto** que lo contiene
+    - Este método no existe en los demás objetos de la clase y da error al invocarlo en ellos.
+  - **this** es una referencia al objeto sobre el que se invoca un método.
+    - **this.count** referencia a la propiedad **count** del objeto sobre el que se invoca.
+      - **this** puede omitirse si no hay ambigüedad y en el ejemplo se podría utilizar **count** en vez de **this.count**.
+
+<img src="Recursos/metodos_propios.png" width="80%" />
+
+# Bibliografía
+
+## CSS
 - [Unpocodetodo](http://w3.unpocodetodo.info/css3/grid-items.php)
   - [CSS - Líneas y carriles](http://w3.unpocodetodo.info/css3/grid-palabras-clave.php#lineasycarriles)
 - [Learncssgrid](https://learncssgrid.com/)
 - [Grid Cheatsheet](https://yoksel.github.io/grid-cheatsheet/)
 
-### Javascript
+## Javascript
 - [Fundamientos Javascript ES6](https://bluuweb.github.io/javascript/fundamentos/#var-vs-let-vs-const)
 - [10 Cosas de JAVASCRIPT que debes conocer para React/Vue/Angular](https://www.youtube.com/watch?v=Z4TuS0HEJP8)
 - [Arrow Functions](https://deployando.net/2019/06/11/javascript-arrow-functions/)
@@ -407,3 +502,6 @@ localStorage.clear();                 // Elimina todos los contenedores.
 - [Comparadores de igualdad e identidad](https://developer.mozilla.org/es/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 - [Local Storage](https://developer.mozilla.org/es/docs/Web/API/Window/localStorage)
 - [Same Origin Policy](https://developer.mozilla.org/es/docs/Web/Security/Same-origin_politica)
+- [Una reintroducción a JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Una_re-introducci%C3%B3n_a_JavaScript)
+- [Grammar and types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
+- [Clases predefinidas de JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)

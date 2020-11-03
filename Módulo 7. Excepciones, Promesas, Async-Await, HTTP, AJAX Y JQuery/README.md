@@ -37,7 +37,7 @@ try {
 }
 ```
 
-<img src="Recursos/try_catch_01.png" width="80%" />
+<img src="../Recursos/try_catch_01.png" width="80%" />
 
 ## [Tema 2. Promesas I: new Promise(..), resolve, reject, async, await](https://www.youtube.com/watch?v=uDG6lPJTA-8)
 
@@ -141,7 +141,7 @@ let r2 = Promise.reject("Promesa rechazada"); // Equivale a:
 let r1 = new Promise((resolve, reject) => reject("Promesa rechazada"));
 ```
 
-<img src="Recursos/promesas_01.png" width="50%">
+<img src="../Recursos/promesas_01.png" width="50%">
 
 **Promesas en paralelo**
 - Hasta ahora solo vimos como ejecutar una función asíncrona a la vez (en serie), sin embargo es muy común que necesitemos realizar múltiples al tiempo, por ejemplo para obtener varios datos de un API. Para eso la clase Promise tiene un método estático llamado Promise.all el cual recibe un único parámetro, una lista de promesas las cuales se ejecutan simultáneamente, si alguna de estas es rechazadas entonces toda la lista lo es, pero si todas se resuelven entonces podemos obtener una lista de todas las respuestas.
@@ -177,7 +177,7 @@ Promise.race([readFile('./archivo1.txt'), readFile('./archivo2.txt'])
 
 No exactamente. Es cierto que las promesas manejan código que será ejecutado en algún futuro al igual que los callbacks. Nótese aquí la incertidumbre de cuándo será ejecutado este código. Sin embargo, la diferencia está en el mecanismo de las promesas. Pero antes, repasemos un poco para entender este mecanismo. El código síncrono inmediatamente se va a un lugar llamado el Call Stack, aquí la última función que entra al stack es el primero que se ejecuta y que sale del stack así hasta la primera que ingreso. Por otro lado, el asíncrono se va a una cola de tareas para su respectiva ejecución. Una vez que el Call Stack esté vacío, el Event Loop moverá las funciones que ya estén listas de la cola de tareas al Call Stack y luego pasarán a mostrar su resultado. Con esto en mente retomemos las promesas. Estas se dirigen a una cola de tareas diferente a las que van los callbacks. Los callbacks se van al Task Queue y las promesas al PromiseJobs o también llamado MicroTask Queue. Estos son manejadores de tareas, básicamente son los que deciden qué funciones son las que entran y las que salen. 
 
-<img src="Recursos/promesas_callbacks_01.png" width="80%">
+<img src="../Recursos/promesas_callbacks_01.png" width="80%">
 
 **Async/Await**
 - Facilita el uso de promesas
@@ -194,8 +194,8 @@ No exactamente. Es cierto que las promesas manejan código que será ejecutado e
   - **await <promesa>** solo se puede utilizar **dentro** de una **función async**.
     - No se puede utilizar en otros contextos.
 
-<img src="Recursos/async_await_01.png" width="80%">
-<img src="Recursos/async_await_02.png" width="80%">
+<img src="../Recursos/async_await_01.png" width="80%">
+<img src="../Recursos/async_await_02.png" width="80%">
 
 
 **Info extra sobre Async/Await**

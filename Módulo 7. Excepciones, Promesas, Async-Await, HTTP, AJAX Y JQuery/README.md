@@ -735,3 +735,184 @@ console.log(<msg>) envía <msg> a la consola
 del navegador.
 
 ## [Tema 4. HTTP: Protocolo, solicitudes, respuestas, métodos, MIME](https://www.youtube.com/embed/OgZfHsVjTCw)
+
+### La web inicial
+- Servidor web estático: programa que sirve ficheros solictados por el cliente.
+- Cliente web: muestra páginas webs traídas de un servidor en internet a un usuario.
+  - **http:** : protocolo.
+  - **upm.es**: dirección de dominio del servidor.
+  - **/dir/cal.html**: la ruta al fichero en el directorio de recursos del servidor.
+- La transacción HTTP vista desde el cliente:
+  - Establece una conexión TCP con el servidor.
+  - Envía por la conexión una solicitud HTTP con la ruta al recurso web.
+  - Recibe por la conexión la respuesta HTTP con el fichero (página web).
+  - El servidor cierra la conexión TCP.
+
+### HTTP hoy
+- Soporta acceso hypermedia a páginas web y a otros servicios de internet.
+  - Evolución: HTTP 0.9 -> HTTP 1.0 -> HTTP 1.1 -> HTTP/2
+- Transacción HTTP
+  - Una transacción HTTP se inicia siempre desde el lado del cliente.
+    - El cliente establce la conexión HTTP con el servidor o reutiliza una existente.
+    - El cliente envía solicitudes **HTTP** al servidor por la conexión **HTTP**.
+      - Pueden enviar varias solicitudes en paralelo al servidor (conexión paralela).
+    - El servidor contesta al cliente enviando **Respuesta HTTP** por la conexión.
+  - Solicitud y despues son **envíos independientes**, aunque relacionados.
+- Solicitud y respuesta tienen el mismo formato.
+  - Formado por 3 partes: primera línea, parámetros y cuerpo.
+
+### Tipos de transacciones HTTP: métodos o verbos
+- Transacciones del **interfaz uniforme**
+  - **POST**: crea un recuerdo en el servidor.
+  - **GET**: trae un recuerdo al servidor.
+  - **PUT**: modifica un recurso del servidor.
+  - **DELETE**: borra un recurso del servidor.
+- Existen otros métodos:
+  - **HEAD**: pide solo la cabecera del servidor.
+  - **OPTIONS**: determina qué metodos acepta el servidor.
+  - **TRACE**: traza proxies, caches, etc. hasta el servidor.
+  - **CONNECT**: conecta un servidor a través de un proxy.
+
+### Cabecera y cuerpo de mensajes HTTP
+- Los mensajes de solicitud o respuesta constan de **cabecera** y **cuerpo**.
+- **Cabecera**: string formado por la **primera línea, parámetros y marca de final** (línea en blanco **\\n\\n**)
+  - **Primera línea**: incluye método, ruta y versión HTTP.
+  - **Parámetros**: cada uno coupa 1 línea y su formato es: **Nombre: valor\\n**
+- **Cuerpo**: solo se incluye al enviar recursos. Puede tener cualquier formato: string, binario, imagen...
+
+<img src="../Recursos/cabecera_cuerpo_mensaje_http_01.png" width="100%">
+
+### Códigos de estado de un servidor web
+
+<img src="../Recursos/codigos_estado_http.png" width="70%">
+
+### Tipos MIME
+
+- Definen el tipo de un recurso.
+- Un tipo MIME tiene **2 tipo / subtipo**
+  - application, audio, font, example, image, message, model, multipart, text, video
+- Ejemplos
+  - image/gif, image/jpeg, image/png, image/svg...
+  - text/plain, text/html, text/css...
+  - application/javascript, application/msword
+- HTTP utiliza el tipo Mime para tipar el contenido del cuerpo (*body*).
+  - **Cabecera Request**: "Accept: text/html, image/png..."
+  - **Cabecera Response**: "Content-type: text/html"
+
+<img src="../Recursos/tipo_mime_01.png" width="35%">
+<img src="../Recursos/tipo_mime_02.png" width="40%">
+
+### Ejemplo de transacción HTTP GET
+
+- Cuando el servidor recibe la solicitud GET
+  - Responde con los siguientes parámetros:
+    - **Devuelve** al cliente el **fichero solicitado** en el **cuerpo** de la respuesta junto con el código "**200 OK**"
+    - El parámetro "**Content-Type: text/html**" indica el **tipo MIME** del recurso enviado.
+    - El parámetro "**Content-length: 608** indica el **número de octetos** del cuerpo.
+  - Si el fichero solicitado no existe, envía solo el mensaje de error: **304 Not found**.
+- La etensión del fichero genera su tipo MIME
+  - *xx*.html => text/html
+  - *xx*.gif => image/gif
+  - *xx*.xss => text/css
+- El tipo MIME indica al navegador el formato del recurso recibido
+  - El navegador muestra el cógido HTML si una **página HTML** lleva el tipo "**text/plain**".
+
+### Interfaces REST
+
+- Interfaz Rest
+  - Cliente y servidor **interaccionan con HTTP**.
+    - Cada operación identifica el recurso con una **ruta (*path*) diferente**
+      - Ejemplo: /nota/5, /user/10, /notas/user/5, /grupo?n=23, etc.
+  - Solo utilizan métodos o comandos del **interfaz uniforme**
+    - **GET**: trae al cliente (**lee**) un recuerdo identificado por una ruta.
+    - **POST**: **crea** un recurso identificado por una ruta.
+    - **PUT**: **actualiza** un recurso identificado por una ruta.
+    - **DELETE**: **borra** un recurso identificado por una ruta.
+
+## [Tema 5. AJAX - Asynchronous JavaScript & XML](https://www.youtube.com/watch?v=1BQgVPYMPaw)
+
+**AJAX: Asynchronous Javascript & XML | JSON | text**
+- Permite realizar transacciones HTTP desde JavaScript en el cliente
+  - El soporte inicial de AJAX era el objeto XMLHttpRequest (cuando no existías fetch)
+- ES6 añade el método **fetch** para realizar transacciones HTTP.
+  - **fetch** permite el uso de **promesas** y es muy simmple y eficaz.
+- Una aplicación AJAX debe economizar proceso y ancho de banda.
+  - También se denominan RIA (Rich Internet Application) o SPA (Single Page Applications)
+
+**Same-origin Security Policy**
+- **Origen**
+  - Protocolo, dominio y puerto del servidor de donde vino la página o script.
+- La política de **same-origin** es el mecanimos básico de seguridad Web.
+  - Restringe transacciones HTTP-AJAX a otros servidores diferentes de **origin**.
+- Las transacciones HTTP tradicionales de HTML no están afectadas por la *Same-origin Security Policy*.
+  - **Transacciones GET** generadas con: href, link rel, script, img, audio, video, iframe, object, form metdho="GET"...
+  - **Transacciones POST** generadas con: form method="POST"
+
+**CORS: Cross-Origin Resource Sharing**
+- La política de seguridad basada en *same-origin* es restrictiva.
+  - CORS permite flexibilidad esta política manteniendo controles de seguridad.
+    - Utiliza el navegador como un intermediario confiable.
+- CORS necesita extensiones de HTTP para garantizar la seguridad
+  - Son extensiones complejas definidas como parte del objeto **fetch** de **ES6**.
+- Las solicitudes HTTP CORS deben declarar su servidor *origin*.
+  - El servidor accedido solo acepta solicitudes cuando tiene confianza en *origin*.
+- CORS incluye transacciones **simples** y **complejas**.
+  - Las simples son similares a las ya existentes en HTML.
+  - Las complejas permiten cualquier transacción.
+    - El **servidor** accedido tiene que dar su **consentimiento** con **antelación**.
+
+**FETCH API**
+- Permite realizar transacciones AJAX.
+- *fetch(url)*
+  - Realiza una transacción **GET** (trae el recurso identificado por **url**).
+- *fetch(resource, init)*
+  - Realiza cualquier transacción AJAX (HTTP).
+    - Devuelve una **promesa** con un objeto **Response**.
+  - **resource**: puede ser el **url** (dirección) de un recurso o un objeto **Request**.
+  - **init**: objeto opcional que permite configurar parámetros de la solicitud HTTP.
+- **Headers**: objeto genérico para gestionar cabeceras (**Request** y **Response**)
+- Objetos **Request** y **Response** de la transacción HTTP.
+  - [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request)
+  - [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
+
+```javascript
+// <div id="res"></div>
+
+/* 
+Esta app está publicado en neocities junto con el
+fichero JSON (neocities no tiene CORS activado):
+https://juan-quemada.neocities.org/ex/pelis.htm
+AJAX accede al fichero JSON sin problemas, porque
+la página Web el mismo origen (neocities) que el
+fichero JSON. (hacer clic en URL).
+*/
+
+const get = async(url) => {
+  try {
+    // fetch está configurado por defecto para hacer transacciones GET
+    // Cuando se pasa un URL como parámetro, trae del servidor el recurso asociado a la URL
+    // con una transacción GET.
+    let response = await fetch(url); 
+    // fetch devuelve un objeto de tipo "response" (respuesta HTTP) con métodos
+    // como json(), text() o blob() para obtener el contenido de body en esos formatos.
+    let myJson = await response.json();
+    show("res", `Respuesta: <br> ${JSON.strinify(myJson)}`);
+  } catch(e) {
+    /*
+    Si cargamos este fichero HTML de otro origen, p.e.
+    un fichero local (file:///Users/jq/ej/20-pelis.htm)
+    dará error, salvo que cambiemos el URL del fichero
+    JSON por https://api.myjson.com/bins//a7k7a, que
+    tiene CORS activado.
+    */
+    show("res", `Error: ${e}`);
+  }
+}
+
+const show = (id, msj) => document.getElementById(id).innerHTML = msj;
+
+get("https://juan-quemada.neocities.org/ex/pelis.json");
+// get("https://api.myjson.com/bins//a7k7a"); // Servidor que acepta CORS
+```
+
+## [Tema 6. MyJSON - AJAX - REST](https://www.youtube.com/watch?v=SpkJsJJmdTM)

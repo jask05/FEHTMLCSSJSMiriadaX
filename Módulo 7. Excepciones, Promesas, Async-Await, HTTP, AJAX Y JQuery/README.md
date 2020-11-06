@@ -916,3 +916,154 @@ get("https://juan-quemada.neocities.org/ex/pelis.json");
 ```
 
 ## [Tema 6. MyJSON - AJAX - REST](https://www.youtube.com/watch?v=SpkJsJJmdTM)
+- MyJson.com
+  - Repositorio de recursos JSON muy sencillo de utilizar.
+    - Acceso web para usuarios: [http://myjson.com](http://myjson.com)
+    - Acceso **REST** utilizando AJAX para aplicaciones
+  - Primitivas de interfaz REST
+    - **GET /bins/:id**: trae al cliente el recurso JSON identificado por **:id**.
+    - **POST /bins**: crea un recurso JSON y devuelve **url** con **:id** del recurso.
+    - **PUT /bins/:id**: actualiza el recurso JSON identificado con **:id**.
+  - Para usar el repositorio no es necesario crear una cuenta. 
+
+```javascript
+// MODELO
+const inicial = ["Superlópez", "Jurassic Park", "Interstellar"];
+let pelis;
+let url;
+
+// Primitivas AJAX
+const postInicial = async (url_inic, inicial) => {
+  let response = await fetch(
+    url_inic,
+    {
+      metdho: "POST",
+      headers: { "Content-Type": "application/json", },
+      body: JSON.stringify(inicial)
+    }
+  );
+  return (await response.json()).uri;
+};
+
+const getPeliculas = async (url) => {
+  let response = await fetch(url);
+  return await response.json();
+};
+
+const putPeliculas = async (urls, pelis => {
+  let response = await fetch(
+    url,
+    {
+      method: "PUT",
+      headers: {"Content-Type": "application/json", },
+      body: JSON.stringify(pelis)
+    }
+  );
+  return await response.json();
+});
+
+// VISTAS
+const showView = (pelis) => {
+  let i = 0, view = "";
+  while(i < pelis.length) view += `<li>${pelis[i++]}</li>`)
+}
+
+// CONTROLADORES
+const showContr = () => {
+  document.getElementById("lista").innerHTML = showView(pelis);
+  document.getElementById("url").innerHTML = url;
+};
+const addContr = async () => {
+  let p = document.getElementByID("pelicula").value;
+  pelis.push(p);
+  await putPeliculas(url, pelis);
+  showContr();
+};
+const resetContr = async () => {
+  pelis = [...inicial];
+  await putPeliculas(url, pelis);
+  showContr();
+};
+
+// EVENTOS
+document.addEventListener("click", ev => {
+  if      (ev.target.matches("#add"))   addCont ();
+  elseif  (ev.target.marches("#reset")) resetContr();
+});
+
+// INICIALIZACION
+const init = async () => {
+  // document.addEventListener("DOMContentLoaded", init);
+  try {
+    // Intenta cargar la URL de local storage
+    // pero al no estar almacenada, hace una llamada a Myjson
+    url = localStorage.getItem("url")
+        || await postInicial("https://api.myjson.com/bins", inicial);
+    localStorage.setItem("url", url);
+
+    pelis = await getPeliculas(url);
+    showContr();
+  } catch (e) { 
+    document.getElementByID("lista").innerHTML = `Error: ${e}`;
+  }
+}
+document.addEventListener("DOMContentLoaded", init);
+
+/*
+Mis películas favoritas: <br> (<span id="url"></span>):
+<ul id="listas"></ul>
+
+Añadir películas: <input type="text" id="pelicula">
+<button id="add">Añadir</button> <br>
+<button id="reset">Inicializar</button>
+*/
+```
+
+## [Tema 7. Librería jQuery y CDN Web](https://www.youtube.com/watch?v=njYadZd73XI)
+
+### Librería jQuery
+- Librearía multi-navegador con el lema: *write less, do more*.
+- Incluye muchas funcionalidades
+  - Manipulación de DOM, eventos, estilos CSS, AJAX, etc.
+- ES6 hace que jQuery sea innecesario, se utiliza "*Vainilla Javascript*".
+
+### Objetos y función jQuery: $(..)
+- jQuery representa los **objetos DOM** como **objetos jQuery**.
+  - Permiten procesar el árbol DOM de forma más eficaz.
+    - **Arrays de objetos jQuery** se procesan con **un solo método**, sin necesidad de bucles.
+- Función jQuery: **jQuery("\<selector:CSS\>")** o **$("\<select_css\>")**.
+  - Devuelve la colección de objetos jQuery que casan con el **\<selector CSS\>**
+
+```javascript
+document.getElementById("fecha"); // Vainilla Javascript
+document.querySelectorAll("#fecha"); // Vainilla Javascript
+$("#fecha");  // jQuery
+
+// Ejemplo
+
+//<H1>Fecha y hora con jQuery</H1>
+//<div id="fecha"></div>
+$("#fecha").html(new Date());
+
+// Ejecutar JS cuando el árbol DOM está construido
+$(function() { $("#fecha").html(new Date()); });
+```
+
+### Caché y CDN (Content Delivery Network)
+
+- Caché: contiene recursos cargados anteriormente durante la navegación.
+  - La caché identifica los recursos por igualdad de URLs.
+    - Un nuevo recurso se carga de algunas caché (navegador), si tiene el mismo URL que otro ya guardado.
+    - Cargarlo de la caché es más rápido que bajarlo del servidor, especialmente de la del navegador.
+- CDNs web: utilizan el mismo URL (a Google, jQuery, etc) en muchas páginas.
+  - Así se macimiza la probabilidad de que los recursos estén ya en caché. 
+
+### Eventos con jQuery
+
+```javascript
+$(function(){
+  let img = $("#1");
+  img.on("dbclick", function(){img.attr("src", "lamp_off.jpg")});
+  img.on("click", function(){img.attr("src", "lamp_on.jpg")});
+});
+```

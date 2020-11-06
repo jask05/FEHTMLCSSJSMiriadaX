@@ -176,7 +176,7 @@ Variables y funciones externas son visibles en el bloque de la función.
   - Para incovcar un **método** de un **objeto**: document.write("Hola");
     - Invocar a un método que **NO** pertenece a un objeto causa **error**.
 
-**Entorno global: windo, document y Web APIs**
+**Entorno global: windows, document y Web APIs**
 - El objeto **windows** es el entorno global de ejecución de Javascript en el navegador.
   - Sus propiedades dan acceso a los elementos de página web, del navegador y de Javascript.
     - **This** es una referencia al **entorno de ejecución** y referencia **window** cuando el programa está en el entorno global.
@@ -240,6 +240,23 @@ pelicula.pais = "EEUU"; // Crear la propiedad ya que no existe.
 delete pelicula.estreno; // Elimina la propiedad estreno
 "estreno" in pelicula; // Devuelve true o fase según exista o no la propiedad.
 ```
+
+### [Destructuring Objects](https://www.youtube.com/watch?v=Z4TuS0HEJP8&ab_channel=Bluuweb!&t=834s)
+
+```javascript
+const mascota = {
+  nombre: "Luca",
+  edad: 8,
+  vivo: true,
+  raza: ["bichón maltés", "blanco"]
+}
+
+const nombreMascota = mascota.nombre;
+const {edad, nombre} = mascota;
+console.log(`Nombre: ${nombre}. Años: ${edad}`); // Destructuring
+```
+
+
 ### MVC (Modelo-Vista-Controlador)
 - Patrón de diseño que se puede aplicar en el cliente o en el servidor.
 - **Evento**: mueve la aplicación ejecutando controladores (manejadores de eventos).
@@ -585,7 +602,7 @@ var arr2 = [3, 4, 5];
 arr1 = [...arr1, ...arr2];
 ```
 
-- El operador **rest (...x)** agrupa el **resto** de valores en un arrya.
+- El operador **rest (...x)** agrupa el **resto** de valores en un array.
   - Agrupa en un array el resto de los elementos asignados de una lista
     - El operador **rest** debe ir al final y agrupa los últimos elementos de la lista.
 
@@ -1226,6 +1243,7 @@ Bibliografía
 - [Clases predefinidas de JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 - [Destructuring assignment](https://javascript.info/destructuring-assignment)
 - [Destructuring assignment 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+- [Destructuring Objects](https://wesbos.com/destructuring-objects)
 - [Sintáxis Spread](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Sintaxis_Spread)
 - [Sintáxis Rest](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 - [setTimeOut y setInterval](https://javascript.info/settimeout-setinterval)

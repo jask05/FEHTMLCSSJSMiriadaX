@@ -1286,3 +1286,23 @@ Bibliografía
 - [Headers](https://developer.mozilla.org/en-US/docs/Web/API/Headers)
 - [Request](https://developer.mozilla.org/en-US/docs/Web/API/Request)
 - [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response)
+
+## Wireframing
+
+- [Figma](https://www.figma.com/)
+  - [Componentes](https://www.youtube.com/results?search_query=Componentes+en+figma)
+  - [Prototipado avanzado](https://www.youtube.com/results?search_query=prototipado+avanzado+figma)
+  - [Youtube - Tutorials: Create your design system in Figma](https://www.youtube.com/playlist?list=PLXDU_eVOJTx5LSjOmeBYMuvaa4UayfMe4)
+  - [Youtube - Tutorials: Prototype while you design](https://www.youtube.com/playlist?list=PLXDU_eVOJTx7aqRW3Skp1aRT9ktC3ctqA)
+- [DesignSnips](http://designsnips.com/)
+- [UI-Patterns](https://ui-patterns.com/)
+- **Fuentes e iconos**
+  - https://www.intechnic.com/blog/icon-usability-best-ux-tips-and-design-guidelines/
+  - https://dev.to/linuxfuture/icon-fonts-vs-svgs-an-ultimate-guide-to-accessible-web-icons-2lh6
+  - https://svgontheweb.com/
+  - https://glyphter.com/
+  - https://transfonter.org/
+  - https://icomoon.io/
+  - https://fontawesome.com/
+  - https://material.io/resources/icons/?style=baseline
+  - https://onlinefontconverter.com/

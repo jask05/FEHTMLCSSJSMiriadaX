@@ -31,3 +31,240 @@
 <img src="../Recursos/usabilidad_01.png" width="70%" />
 <img src="../Recursos/accesibilidad_01.png" width="50%" />
 
+### Tema 1. Ejercicio opcional
+**Parte 1**
+
+Elige un sitio web en el que estés trabajando o sobre el que tengas curiosidad si cumple con los estándares de la WAI para la creación de páginas web accesibles. Partiendo de la URL del sitio web elegido, selecciona al menos dos validadores de código y comprueba cuántos errores de accesibilidad tienen.
+
+Te recomendamos pasar los siguientes validadores:
+
+- HTML(url): https://validator.w3.org/
+- CSS(url): https://jigsaw.w3.org/css-validator/
+- Color(url): https://www.checkmycolours.com/
+- WCAG (url): 
+  - https://achecker.ca/checker/index.php
+  - https://fae.disability.illinois.edu/anonymous/?Anonymous%20Report=/
+- WCAG (extensión navegador): 
+  - https://chrome.google.com/webstore/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?hl
+  - https://squizlabs.github.io/HTML_CodeSniffer/
+
+**Parte 2**
+
+Elige cualquiera de los ejercicios que has desarrollado durante este curso, pasa los test anteriores (u otros que consideres de esta lista de validadores
+https://www.usableyaccesible.com/recurso_misvalidadores.php#adecuacion) y corrige el código para que sea accesible.
+
+## [Tema 2.a Figma I. Arquitectura de información con Figma (conceptos y registro)](https://www.youtube.com/watch?v=ujGLkQpRpKY)
+
+**Arquitectura de la información**
+- Diseño estructura de los entornos de información compartidos.
+- Arte y ciencia de organizar y etiquetar SW y sitios webs para apoyar la usabilidad y la facilidad de encontrar contenidos.
+
+**Sitemap**
+- Diagrama que sirve para informarnos acerca de la estructura del sitio, etiquetas y las relaciones entre páginas.
+- No suelen mostrar páginas interiores o finales.
+- Ayudan a mostrar gráficamente el contenido que previamente se han incluido en un inventario de contenidos.
+
+**Wireframes**
+- *Esquema de páginas o plano de pantalla*
+- Guía visual que representa el esqueleto o estructura visual de un sitio web o aplicación.
+- Esquematiza el diseño de la página, incluyendo elementos de la interfaz, sistema de navegación y como funciona en conjunto.
+- No son exhaustivos.
+- Según los detalles que se incluyan pueden ser de bajo, medio o alto nivel.
+- Permiten explorar el contenido, navegación e interacciones de forma independiente a los elementos visuales.
+- Herramientas
+  - Adobe XD
+  - Figma
+
+<img src="../Recursos/wireframe_01.png" width="40%" />
+
+**Diseño atómico**
+- Metodología para crear sistemas de diseño.
+- Niveles
+  - **Átomos**: bloques básicos: textos, botón, colores
+  - **Moléculas**: grupos de átomos (buscador)
+  - **Organismos**: grupo de moléculass (cabecera de página)
+  - **Plantillas**: grupo de organismos (no_sidebar_page)
+  - **Páginas**: instancias de plantillas (página de inicio)
+
+<img src="../Recursos/disenio_atomico_01.png" width="50%" />
+
+**Sistema de diseño**
+- Consiste en una serie de elementos y patrones de diseño, reglas que evolucionan y rigen la composición de un producto digital.
+- Tienen una **unidad mínima** de la que se parte para definir **alturas, tamaños y distancias**.
+- La unidad mínima puede ser múltiplos de 8px.
+
+**Prototipo**
+- Modelo representativo o simulación del producto.
+- Da paso a especificaciones sobre la interacción más complejas, como la transaición o la recarga parcial (AJAX).
+- En un prototipo se ha aplicado el sistema de diseño que se haya creado, tomando como base a la identidad corporativa del proyecto.
+- GUI
+  - Sketch
+  - InVision
+  - [Figma](https://www.figma.com/)
+    - Gratuito
+    - Colaborativo y tiempo real
+    - Bastantes plugins
+    - App de escritorio + navegador
+    - Vectorial (SVG)
+  - AdobeXD
+  - [Más info](https://uxtools.co/tools/prototyping/)
+
+## [Tema 2b. Figma II. Arquitectura de información con Figma](https://www.youtube.com/watch?v=-LlgF1IX5Po)
+
+- Explicación de cómo funciona Figma.
+
+### Tema 2. Ejercicio opcional
+
+**Sitemap con Figma**
+
+Imagina que te estás planteando crear tu sitio web personal, en el que quieres incluir diferentes páginas con tu biografía, tus estudios y experiencia laboral, tus trabajos y colaboraciones en diferentes proyectos, tu gustos musicales y hobbies, tu contacto y un blog.
+
+Tal y como hemos visto, el primer paso para atacar esta arquitectura de información va a ser crear un mapa del sitio con el que poder dimensionar el sitio web. Siguiendo la estructura que planteamos en este enunciado tendríamos:
+
+- Home
+- Biografía
+- Estudios y experiencia laboral
+- Trabajos y colaboraciones
+- Hobbies
+- Blog (entradas)
+- Contacto
+ 
+Con Figma crea el mapa de sitio para tu web personal. Puedes seguir la estructura que proponemos en este enunciado o crear una propia. No es necesario que tu mapa de sitio tenga mucho detalles. En las siguientes lecciones avanzaremos en el uso Figma y podrás empezar a preocuparte por los detalles de tus diseños.
+
+<img src="../Recursos/mod8_tema02_ej_opcional.png" width="70%" />
+
+## [Tema 3. Figma III. Wireframes y prototipo con navegación](https://www.youtube.com/watch?v=7oPvHXUnO2w)
+
+- Continúa la explicación de cómo funciona Figma. 
+  - Realizar más pantallas.
+  - Vincular wireframes.
+  - Probar una demo
+
+### Tema 3. Ejercicio opcional
+
+**Wireframing**
+
+Partiendo del ejercicio anterior, en el que proponías un sitemap para tu sitio web personal, tendrás que generar unos planos de pantalla para las diferentes vistas. En nuestro caso, siguiendo con el ejemplo que proponíamos, tendríamos la siguiente estructura:
+
+- Home
+- Biografía
+- Estudios y experiencia laboral
+  - Trabajos y colaboraciones
+- Hobbies
+- Blog (entradas)
+- Contacto
+
+Tendríamos que diseñar en este caso la estructura de página principal (home), asegurándonos de incluir un menú de navegación que nos permita tener en el mismo nivel de profundidad seis páginas, a las que podremos acceder desde la propia página principal.
+
+Es importante asegurar también que el usuario de ese menú puede moverse a cualquiera de las páginas del conjunto esté donde esté. También que sepa en qué página está en cada momento.
+
+Otro dato a tener en cuenta a la hora de construir los menús de navegación, es que no deben ser diferentes en cada una de las páginas, sino que debemos tratar de mantener el mismo menú con las mismas opciones en todas las páginas.
+
+Con Figma, crea una página nueva para los planos de pantalla de tu web personal. Dentro de la página crea tantos “Frames” como vistas o páginas diferentes tenga tu sitio. Crea la estructura de las páginas, incluyendo los componentes que deberían ir en cada una:
+cabecera, menú o menús de navegación, imágenes, tarjetas de contenido, pie de página, etc…
+
+En páginas como estas: http://designsnips.com/ https://ui-patterns.com/ puedes encontrar inspiración para montar las plantillas de tu sitio web.
+
+No es necesario que tus planos de pantalla tengas muchos detalles. En la siguiente lección avanzaremos en el uso sistemas de diseño y podrás empezar a preocuparte por los detalles gráficos de tus prototipos.
+
+## [Tema 4. Figma IV. Diseño de Interfaces Gráficas de Usuario](https://www.youtube.com/watch?v=DSwDFeqXyPw)
+
+**Retícula**
+- Sistema de reaciaonalización de espacio.
+- Permite relacionar los elementos tipográficos, imágenes, formas con el formato o entre si.
+- En el caso de diseño de interfaces gráficas el formato será el tamaño del *viewport* o el tamaño de un Frame.
+
+**Tipografía**
+- El sistema de proporciones en diseño gráfico siempre se establece con el tamaño de la tipografía (tamaño de interlineado).
+  - Marca el ritmo para generar las proporciones.
+- Si se decide tener un interlineado de 24px, conviene que **todo** sea relacionado con ese tamaño: márgenes, espacios entre columnas, sangrías, espacios entre párrafos, etc.
+
+<img src="../Recursos/grilla_01.jpg" width="80%" />
+
+**Ritmo vertical**
+- Se suele crear con el tamaño del interlineado, y con este ritmo vertical se puede decidir los tamaños de márgenes, paddings, otros tamaños de letra o interlineado de otros tipos de párrafo.
+
+**Ritmo horizontal**
+- Se crean columnas cuyo tamaño se desconoce.
+- La proporcionalidad con el módulo de la línea base se introduce en la **medianil o gutter** (espacio entre columnas).
+
+**Design system**
+- "Cómo crear sistemas de diseño".
+- Se crea un sistema de diseño sencillo, con estilos básicos que se usarán en la web o en la app.
+- Esto facilita la creación y que escale de manera coherente.
+- **Sistema de diseño**
+  - Sistema de tipografía.
+  - Retículas y espaciados.
+  - Colores y degradados, así como tintas de ese color.
+  - Efectos como sombras, overlays, etc.
+  - Animaciones.
+  - COmponentes diseñados a aprtir de lo anterior.
+
+**Componentes**
+- Pieza resusable que se diseña una vez y que se copia iterativamente.
+  - Si se modifica el original, se modifica la copia.
+- **Creación de un componente**
+  - Seleccionar elemento > (click derecho) *create component* 
+  - Quedan almacenados en la barra lateral de **Assets**. Se pueden reutilizar.
+  - *Detach instance*: vuelve independiente la copia.
+- **Constraint**
+  - Algunos componentes son complejos con varios elementos y se quiere tener un control sobre el posicionamiento de los elementos internos del componente
+
+<img src="../Recursos/componente_01.png" width="50%" />
+
+- **Scale**: se relaciona proporcionalmente con el tamaño del componente entero como fue diseñado en el componente.
+- **Left, right, top, bottom**: respeta las distancias a los bordes tal cual fue diseñado.
+- **Center**: respeta la distancia al centro.
+- **Left-Right, Top-Bottom**: respeta la distancia a izquierda y derecha al mismo tiempo sin escalar los elementos que pueda contener.
+  - Se usa mucho para componentes complejos que contengan otros componentes
+  - Revisar información de Figma.
+- Más información
+  - [Youtube - Tutorials: Create your design system in Figma](https://www.youtube.com/playlist?list=PLXDU_eVOJTx5LSjOmeBYMuvaa4UayfMe4)
+  - [Youtube - Tutorials: Prototype while you design](https://www.youtube.com/playlist?list=PLXDU_eVOJTx7aqRW3Skp1aRT9ktC3ctqA)
+
+## [Tema 5a. Incluir iconos: fuentes de iconos y SVGs](https://www.youtube.com/watch?v=Pp-rkNHBlUI)
+
+- Fuentes
+  - Fontawesome
+  - Material icon
+- SVG
+  - En línea
+  - sprites
+  - Recursos
+    - Flaticon
+    - Iconmoon
+- Recursos
+
+### Recursos
+- https://www.intechnic.com/blog/icon-usability-best-ux-tips-and-design-guidelines/
+- https://dev.to/linuxfuture/icon-fonts-vs-svgs-an-ultimate-guide-to-accessible-web-icons-2lh6
+- https://svgontheweb.com/
+- https://glyphter.com/
+- https://transfonter.org/
+- https://icomoon.io/
+- https://fontawesome.com/
+- https://material.io/resources/icons/?style=baseline
+- https://onlinefontconverter.com/
+
+<img src="../Recursos/svg_en_linea_01.png" width="100%">
+
+## [Tema 5b. Incluir iconos: fuentes de iconos y SVGs](https://www.youtube.com/watch?v=nTAHU37GLHE)
+
+- Ejemplo práctico
+
+### Tema 5. Ejercicio opcional
+
+**Iconos**
+
+Esta práctica consiste en crear un menú vertical similar al que ha diseñado Twitter para una página ficticia a tu elección. Si no se te ocurre ningún ejemplo sobre el que podías trabajar, puedes copiar el propio menú vertical de twitter.
+
+<img src="Ejercicios/Mooc1-Mod8-V5-Menu_Twitter.png" width="30%" />
+
+Como podemos apreciar en esta imágen la red social recurre a los iconos como forma de reforzar gráficamente el etiquetado de las opciones del menú. En tu caso debes hacer lo mismo. Para todas las opciones de menú, salvo para el perfil, deberás usar una fuente de iconos personalizada, generada por tí desde https://www.flaticon.com/ o https://glyphter.com/  Los iconos pueden estar diseñados por tí con algún programa vectorial como Illustrator, o puede tratarse de una recopilación de uno o varios paquetes de iconos preexistentes. En total tu fuente de iconos tendrá 8 iconos: Icono-logo (equivalente al logo de twitter), inicio, explorar, notificaciones, mensajes, guardados, listas y más opciones.
+
+Cuando hayas generado tu fuente de iconos, debes descargarla e incluirla en tu proyecto web. Para ello recurriremos al método “self-hosted” (auto-alojado o alojado en nuestro propio servidor), añadiendo los estilos pertinentes con @font-face en nuestra hoja de estilos CSS.
+
+Para el perfil, deberás elegir cuatro iconos SVG de caras de usuarios en https://www.flaticon.com/ y descargarlos como sprite SVG. Para incluir el icono de perfil en tu página web, recuerda que el método sprite te permite elegir qué icono quieres mostrar, pero por defecto no aparece ninguno aunque añadamos el código completo del sprite.
+
+## [Tema 6. Search Engine Optimization (SEO)](https://www.youtube.com/watch?v=xXzKbKl1GQY)
+

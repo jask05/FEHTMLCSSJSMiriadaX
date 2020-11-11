@@ -1,0 +1,52 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+$corporateColor: tomato;
+
+* {
+    // border: 1px solid $corporateColor;
+}
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+}
+
+
+
+
+.app {
+    padding: 1rem;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .toggle {
+        width: 50px;
+        height: calc(20px + .1rem * 2 + 2.8px);
+        border-radius: calc(10px + .1rem + 4px);
+        border: 2px solid #333;
+        position: relative;
+
+        .toggle_ball {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background: #333;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+        }
+    }
+}

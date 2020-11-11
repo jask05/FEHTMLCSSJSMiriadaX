@@ -1,0 +1,62 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+$corporateColor: tomato;
+
+* {
+    border: 1px solid $corporateColor;
+}
+
+html,
+body {
+    font-size: $base * 2;
+    font-family: $font_family_base;
+    line-height: $base * 3;
+    color: $body_color;
+    min-height: 100vh;
+}
+
+
+
+
+.app {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    padding: 1rem;
+    min-height: 100vh;
+
+
+    .toggle {
+        .fa {
+            margin-right: $base;
+        }
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        z-index: 2;
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        transform: translateX(-100%);
+        opacity: 0;
+
+        .sidebar_items {
+            .sidebar_item {
+                opacity: 0;
+                transform: translateX(-40%);
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}

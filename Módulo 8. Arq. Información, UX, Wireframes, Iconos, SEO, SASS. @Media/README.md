@@ -28,8 +28,8 @@
 - Se puede evaluar con ACHecker.
 
 
-<img src="../Recursos/usabilidad_01.png" width="70%" />
-<img src="../Recursos/accesibilidad_01.png" width="50%" />
+<img src="../Recursos/usabilidad_01.png" width="40%" />
+<img src="../Recursos/accesibilidad_01.png" width="30%" />
 
 ### Tema 1. Ejercicio opcional
 **Parte 1**
@@ -246,7 +246,7 @@ No es necesario que tus planos de pantalla tengas muchos detalles. En la siguien
 - https://material.io/resources/icons/?style=baseline
 - https://onlinefontconverter.com/
 
-<img src="../Recursos/svg_en_linea_01.png" width="100%">
+<img src="../Recursos/svg_en_linea_01.png" width="60%">
 
 ## [Tema 5b. Incluir iconos: fuentes de iconos y SVGs](https://www.youtube.com/watch?v=nTAHU37GLHE)
 
@@ -258,7 +258,7 @@ No es necesario que tus planos de pantalla tengas muchos detalles. En la siguien
 
 Esta práctica consiste en crear un menú vertical similar al que ha diseñado Twitter para una página ficticia a tu elección. Si no se te ocurre ningún ejemplo sobre el que podías trabajar, puedes copiar el propio menú vertical de twitter.
 
-<img src="Ejercicios/Mooc1-Mod8-V5-Menu_Twitter.png" width="30%" />
+<img src="Ejercicios/Mooc1-Mod8-V5-Menu_Twitter.png" width="20%" />
 
 Como podemos apreciar en esta imágen la red social recurre a los iconos como forma de reforzar gráficamente el etiquetado de las opciones del menú. En tu caso debes hacer lo mismo. Para todas las opciones de menú, salvo para el perfil, deberás usar una fuente de iconos personalizada, generada por tí desde https://www.flaticon.com/ o https://glyphter.com/  Los iconos pueden estar diseñados por tí con algún programa vectorial como Illustrator, o puede tratarse de una recopilación de uno o varios paquetes de iconos preexistentes. En total tu fuente de iconos tendrá 8 iconos: Icono-logo (equivalente al logo de twitter), inicio, explorar, notificaciones, mensajes, guardados, listas y más opciones.
 
@@ -268,3 +268,101 @@ Para el perfil, deberás elegir cuatro iconos SVG de caras de usuarios en https:
 
 ## [Tema 6. Search Engine Optimization (SEO)](https://www.youtube.com/watch?v=xXzKbKl1GQY)
 
+- **Factores internos (on-site)**: se refieren a información que el buscador puede encontrar en nuestras páginas.
+- **Factores externos (off-site)**: son los que tienen que ver con la popularidad, sobre todo medida por los enlaces externos que apuntan o recomiendan nuestra información.
+
+**Metadatos**
+- Permiten potenciar las palabras claves para las que deseemos posicionarnos, pero también aportan la información que permite identificar un recurso.
+- Todo el contenido debe estar correctamente etiquetada.
+- **Título y descripción**: los más importantes.
+  - El título debe tener **hasta 55 caracteres** aprox.
+  - Descripción **máx. 155 caracteres**.
+- Resultado enriquecidos, mediante el uso de datos estructurados.
+  - Los datos estructurados son código que puedes añadir a las páginas para describir su contenido y ayudar a que los buscadores comprendan mejor lo que contienen.
+- Página y redes sociales
+  - Existen etiquetas de metadatos específicas para Facebook o Twitter.
+  - Facebook utiliza OpenGraph.
+  - Twitter utiliz Twitter Cards
+
+**Contenido**
+- Mejorar los aspectos semánticos para asegurar la correcta interpretación y clasificación de los contenidos por parte del buscador.
+- El uso de las etiquetas  semánticas del HTML5, ayudan a los buscadores a discriminar el contenido de la página, en section y article, del contenido complementario incluido en del aside y del contenido común para varias páginas, como son la cabecera, los menús, el pie.
+- Usar los **encabezados** H1 a H6 con sentido lógico según el contenido y lo usarlos para formatear el texto.
+  - Del mismo modo que se diseña el esquema con un índice de un artículo, considerar cuáles son los puntos principales y secundarios del contenido de la ágina.
+- Usar la huella de navegación **BreadcrumbList**.
+  - Fila de enlaces internos situada en la parte superior de una página que permite a los visitantes volver rápidamente a una sección anterior o a la página de inicio.
+- Utilizar URLs amigables que transmitan información sobre el contenido, tanto el nombre de la página como el nombre de los directorios.
+- Si hay contenido duplicado, utilizar el atributo "**rel='canonical'**".
+- Si hay páginas que pueden quedar obsoletas o tienen muchas URLs distintas, hay que realizar un **redireccionamiento 301**.
+- Es importante tener una estructura de enlaces internos que favorezca el acceso a toda la información, basándonos en una página de inicio a través de la cual se puede acceder a todo el contenido.
+- **Evitar** el uso de enlaces en imágenes.
+- **Obligatorio** el diseño *responsive*.
+
+**Robots.txt**
+- Ayuda al buscador a encontrar y restringir su acceso a contenido que conviene y que no conviene que sea indexado.
+- Para evitar que una página sea indexada se usa la etiqueta "**NOINDEX**".
+
+**Sitemap**
+- Crear un mapa web de navegación para los usuarios (sitemap.xml).
+- Debe incluir todas las URLs relevantes del sitio web y también las fechas de actualización.
+- Evitar tener enlaces rotos.
+  - Tener una página de **eror 404** personalizada y que redirija a una página operativa puede mejorar la experiencia de usuario.
+- Si las imágenes son parte importante del contenido, se aconseja introducirlas en el Sitemap.
+
+**Recursos**
+- https://developers.google.com/search/docs/guides/intro-structured-data
+- https://search.google.com/structured-data/testing-tool?utm_campaign=devsite&utm_medium=jsonld&utm_source=intro-structured-data
+- [OpenGraph](https://ogp.me)
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
+
+## [Tema 7. Preprocesadores CSS](https://www.youtube.com/watch?v=c_4ShX--D4o)
+
+- **Preprocesador**: tecnología que toma un lenguaje que está orientado a compilarse o transformarse y dar como resultado un archivo en otro lenguaje más simple.
+- CSS
+  - SASS
+    - Se pueden usar variables
+    - Anidar códigos
+    - Modularizar código
+    - Hacer mixins de funciones
+    - Funciones
+    - Bucles, condicionales, etc.
+  - Stylus
+  - Less
+- SASS no se interpreta en el navegador. Genera el CSS. Es necesario un **preprocesador** que convierta SASS a CSS.
+- Plugins VS Code
+  - Live Sas Compiler
+    - Preferences > Settings > "Open Settings JSON" > "liveSassCompile.settings.formats" > "savePath": "assets/css/"
+  - Sass
+
+<img src="../Recursos/scss_01.png" width="70%" />
+<img src="../Recursos/scss_02.png" width="70%" />
+
+## [Tema 8. Responsive Web Design con Preprocesadores](https://www.youtube.com/watch?v=TjCpy_tlUaw)
+
+- Se pueden aplicar *@media screen* de manera particular y así no repetir código como se utilizan de manera tradicional.
+
+<img src="../Recursos/scss_03.png" width="50%" />
+
+**Mixins**
+- Hace referencia a "funciones" dentro de SASS.
+- Se insertan cerca de las variables.
+
+```css
+/* Mixin */
+@mixin media($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+@include media($bp02) {
+  font-size: 17px;
+}
+```
+
+<img src="../Recursos/scss_04.png" width="50%" />
+
+
+**Recursos**
+- https://eduardoboucas.github.io/include-media/
+- https://scotch.io/tutorials/how-to-use-sass-mixins

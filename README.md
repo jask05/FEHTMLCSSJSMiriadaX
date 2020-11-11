@@ -1226,6 +1226,10 @@ Bibliografía
 - [Learncssgrid](https://learncssgrid.com/)
 - [Grid Cheatsheet](https://yoksel.github.io/grid-cheatsheet/)
 
+## SASS
+- https://eduardoboucas.github.io/include-media/
+- https://scotch.io/tutorials/how-to-use-sass-mixins
+
 ## Javascript
 - [Fundamientos Javascript ES6](https://bluuweb.github.io/javascript/fundamentos/#var-vs-let-vs-const)
 - [10 Cosas de JAVASCRIPT que debes conocer para React/Vue/Angular](https://www.youtube.com/watch?v=Z4TuS0HEJP8)
@@ -1306,3 +1310,9 @@ Bibliografía
   - https://fontawesome.com/
   - https://material.io/resources/icons/?style=baseline
   - https://onlinefontconverter.com/
+
+## SEO
+- https://developers.google.com/search/docs/guides/intro-structured-data
+- https://search.google.com/structured-data/testing-tool?utm_campaign=devsite&utm_medium=jsonld&utm_source=intro-structured-data
+- [OpenGraph](https://ogp.me)
+- [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)

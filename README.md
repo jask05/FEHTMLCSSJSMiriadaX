@@ -1225,6 +1225,12 @@ Bibliografía
   - [CSS - Líneas y carriles](http://w3.unpocodetodo.info/css3/grid-palabras-clave.php#lineasycarriles)
 - [Learncssgrid](https://learncssgrid.com/)
 - [Grid Cheatsheet](https://yoksel.github.io/grid-cheatsheet/)
+- [Transition](https://www.w3schools.com/css/css3_transitions.asp)
+- [Animation](https://www.w3schools.com/css/css3_animations.asp)
+- [Transitio-timing-function](https://easings.net/)
+- Animaciones complejas
+  - GSAP
+  - AnimeJS
 
 ## SASS
 - https://eduardoboucas.github.io/include-media/
@@ -1316,3 +1322,11 @@ Bibliografía
 - https://search.google.com/structured-data/testing-tool?utm_campaign=devsite&utm_medium=jsonld&utm_source=intro-structured-data
 - [OpenGraph](https://ogp.me)
 - [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started)
+
+## SVG
+- Plugin VS Code: SVG Snippets.
+- Plugin Sigma: SVG Export
+- [SVG-OMG](https://jakearchibald.github.io/svgomg/)
+- Diseñadoras
+  - [Youtube - Sara Soueidan](https://www.youtube.com/watch?v=lf7L8X6ZBu8)
+  - [Youtube - Sarah Drasner](https://www.youtube.com/watch?v=4laPOtTRteI)

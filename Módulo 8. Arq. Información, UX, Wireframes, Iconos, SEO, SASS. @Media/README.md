@@ -246,6 +246,9 @@ No es necesario que tus planos de pantalla tengas muchos detalles. En la siguien
 - https://material.io/resources/icons/?style=baseline
 - https://onlinefontconverter.com/
 
+**Plugins de Figma**
+<img src="../Recursos/figma_plugins.png" width="100%">
+
 <img src="../Recursos/svg_en_linea_01.png" width="60%">
 
 ## [Tema 5b. Incluir iconos: fuentes de iconos y SVGs](https://www.youtube.com/watch?v=nTAHU37GLHE)

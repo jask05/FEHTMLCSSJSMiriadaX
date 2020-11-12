@@ -116,8 +116,6 @@ From y to son dos atajos para decir 0% y 100%. Ambas maneras son posibles.
 
 <img src="../Recursos/transform_01.png" width="80%" />
 
-## [Tema 2. Gráficos Vectoriales en HTML y CSS](https://www.youtube.com/watch?v=1dtZtPUgFJ4)
-
 ### Recursos
 
 - [Transition](https://www.w3schools.com/css/css3_transitions.asp)
@@ -126,3 +124,44 @@ From y to son dos atajos para decir 0% y 100%. Ambas maneras son posibles.
 - Animaciones complejas
   - GSAP
   - AnimeJS
+  
+## [Tema 2. Gráficos Vectoriales en HTML y CSS](https://www.youtube.com/watch?v=1dtZtPUgFJ4)
+
+### ¿Qué es SVG?
+
+- El formato SVG, que viene de las siglas Scalable Vector Graphics, es un estándar abierto desarrollado por el consorcio web internacional, que está basado en un XML que define las formas vectorialmente, y que tiene un lenguaje de etiquetas compatible con HTML, por tanto por CSS y por el DOM de JavaScript. 
+- Esto implica que el SVG es un markup normal y corriente que funciona igual que HTML, y que es accesible desde el CSS y desde JS, que nos permite meter formas vectoriales en la web.
+
+### ¿Cómo se crea el SVG?
+
+- El SVG se puede crear de varias maneras: 
+- Podemos crear SVG escribiendo el markup directamente, familiarizándonos con las etiquetas, y escribiéndolas como si fueran HTML 
+- Podemos crear el SVG en un programa de edición vectorial, exportándolo al formato SVG, y luego copiándo el contenido en el HTML. 
+- Podemos crearlo de manera procedural con librerías como D3.js 
+- Podemos crearlo con código con librerías como Snap.js, o SVG.js.
+
+<img src="../Recursos/svg_01.png" width="50%" />
+
+### Recursos
+
+- Plugin VS Code: SVG Snippets.
+- Plugin Sigma: SVG Export
+- [SVG-OMG](https://jakearchibald.github.io/svgomg/)
+- Diseñadoras
+  - [Youtube - Sara Soueidan](https://www.youtube.com/watch?v=lf7L8X6ZBu8)
+  - [Youtube - Sarah Drasner](https://www.youtube.com/watch?v=4laPOtTRteI)
+
+## [Tema 3. Gráficos Vectoriales y uso de transiciones](https://www.youtube.com/watch?v=PHEkQL8WgYc)
+
+**Carga y limpieza de vectores en Figma**
+- Desagrupar => *Ungroup*
+- Seleccionar todos los vectores => *Flatten Selection* (barra superior, 3º icono de cajas superpuestas)
+- Editar Vector y quedarse con las partes que interesan (las que se van a animar).
+  - Edit Object 
+  - Plugin 
+    - SVG Export
+    - Paint Bucket
+    - Split Vectors
+      - *Split by Fills*
+
+## [Tema 4. Interacción gestual en Interfaces Web](https://www.youtube.com/watch?v=VEWYq_firbA)

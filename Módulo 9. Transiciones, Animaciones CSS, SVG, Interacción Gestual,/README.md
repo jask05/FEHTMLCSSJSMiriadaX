@@ -165,3 +165,35 @@ From y to son dos atajos para decir 0% y 100%. Ambas maneras son posibles.
       - *Split by Fills*
 
 ## [Tema 4. Interacción gestual en Interfaces Web](https://www.youtube.com/watch?v=VEWYq_firbA)
+
+### Recursos
+
+- [InteractJS](https://github.com/taye/interact.js)
+
+## [Tema 5. Carruseles y transiciones entre páginas con la librería swiper.js](https://www.youtube.com/watch?v=d6ve_yeaOnQ)
+
+### Recursos
+- https://dixonandmoe.com/rellax/
+- https://www.youtube.com/watch?v=aWJgIETz-Kk
+- https://cdnjs.com/libraries/rellax
+- https://michalsnik.github.io/aos/
+- https://github.com/michalsnik/aos
+- https://prinzhorn.github.io/skrollr/
+- https://scrollmagic.io/
+- [Swiper Demos](https://swiperjs.com/demos/)
+
+## [Tema 6. Scroll animado con las librerías AOS y rellax.js](https://www.youtube.com/watch?v=PF8UllDVDXY)
+
+### Recursos
+- https://dixonandmoe.com/rellax/
+- https://www.youtube.com/watch?v=aWJgIETz-Kk
+- https://cdnjs.com/libraries/rellax
+- https://michalsnik.github.io/aos/
+- https://github.com/michalsnik/aos
+- https://prinzhorn.github.io/skrollr/
+- https://scrollmagic.io/
+
+
+## [Tema 7. Anime.JS](https://www.youtube.com/watch?v=AF9HRgmoWHU)
+
+## [Ejercicio P2P. Enunciado y material de apoyo](https://www.youtube.com/watch?v=iEYKiYKOILM)

@@ -23,7 +23,7 @@
 ```
 - En estos ejemplos los números utilizados son los nombres de las [líneas](http://w3.unpocodetodo.info/css3/grid-palabras-clave.php#lineasycarriles) verticales y horizontales definidas con grid-template-columns y/o grid-template-rows.
 
-<img src="Recursos/css_grid.png" width="50%" />
+<img src="../Recursos/css_grid.png" width="50%" />
 
 - También podemos utilizar la palabra clave span ( se extiende ). Por ejemplo span 1 quiere decir que el ítem se extiende exactamente una celda, fuera el que fuera el tamaño de esta.
 ```css
@@ -58,7 +58,7 @@ Y transformarlo en esto:
 }
 ```
 
-<img src="Recursos/css_grid_area.png" width="50%" />
+<img src="../Recursos/css_grid_area.png" width="50%" />
 
 Pero la propiedad grid-area puede tener una sintaxis alternativa:
 ```css

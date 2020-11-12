@@ -48,8 +48,8 @@
   - Cuando se hace click sobre un botón, se "mida" si hay un manejador asociado al elemento HTML. Si hay, se atiende, si no, se pasa al siguiente nivel.
     - Utiliza el método **matches(..)** para filtrar el evento.
 
-<img src="Recursos/js_eventos_manejadores.png" width="80%"/>
-<img src="Recursos/js_bubbling.png" width="80%"/>
+<img src="../Recursos/js_eventos_manejadores.png" width="80%"/>
+<img src="../Recursos/js_bubbling.png" width="80%"/>
 
 ## Literal de objetos
 - Siempre se tienen que inicializar.
@@ -122,9 +122,9 @@ multi-línea.`
 `Esto es una variable ${var}`
 ```
 
-<img src="Recursos/mvc_02.png" width="90%" />
-<img src="Recursos/mvc_03.png" width="90%" />
-<img src="Recursos/mvc_04.png" width="90%" />
+<img src="../Recursos/mvc_02.png" width="90%" />
+<img src="../Recursos/mvc_03.png" width="90%" />
+<img src="../Recursos/mvc_04.png" width="90%" />
 
 ## JSON (JavaScript Object Notation)
 
@@ -157,7 +157,7 @@ JSON.stringify("hola"); // '"hola"'
 JSON.stringify([1, 2, 3]); // '[1,2,3]'
 JSON.stringify({a:27, b:"hola"}); // '{"a":27,"b":"hola"}'
 ```
-<img src="Recursos/json.png" width="40%" />
+<img src="../Recursos/json.png" width="40%" />
 
 ## Boolean y operadores relacionados: !, && y ||, ===, !==, etc.
 - **Bolean**: true o false
@@ -246,8 +246,8 @@ localStorage.removeItem('s');         // Elimina el contenedor 's'.
 localStorage.clear();                 // Elimina todos los contenedores.
 ```
 
-<img src="Recursos/localstorage_01.png" width="80%" />
-<img src="Recursos/localstorage_02.png" width="80%" />
+<img src="../Recursos/localstorage_01.png" width="80%" />
+<img src="../Recursos/localstorage_02.png" width="80%" />
 
 **Same Origin Policy**
 - Los contenedores de localStorage y sessionStorage siguen políticas de seguridad: **same-origin-policy**.

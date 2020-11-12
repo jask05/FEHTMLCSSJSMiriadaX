@@ -19,7 +19,7 @@
 - Determina a qué tipo pertenece un elemento de JavaScript.
 - Todos los objetos (de cualquier clase) devuelven **object**, savo las funciones.
 
-<img src="Recursos/clases_predefinidas.png" width="50%" />
+<img src="../Recursos/clases_predefinidas.png" width="50%" />
 
 ```Clases predefinidas```
 - Object
@@ -82,7 +82,7 @@ new String("") instanceof String; // true - new String("") pertenece a la clase 
   - Ejemplo. Los objetos de la **clase Date** heredan métodos como:
     - toString(), getDay(), getFullYear(), getHours(), getMinutes(), etc.
 
-<img src="Recursos/metodos_heredados.png" width="60%" />
+<img src="../Recursos/metodos_heredados.png" width="60%" />
 
 ```Métodos propios```
 - Una **función** asignada a una **propiedad** de un objeto, crea un **método**.
@@ -92,11 +92,11 @@ new String("") instanceof String; // true - new String("") pertenece a la clase 
     - **this.count** referencia a la propiedad **count** del objeto sobre el que se invoca.
       - **this** puede omitirse si no hay ambigüedad y en el ejemplo se podría utilizar **count** en vez de **this.count**.
 
-<img src="Recursos/metodos_propios.png" width="80%" />
+<img src="../Recursos/metodos_propios.png" width="80%" />
 
 ```Number: Literales de dec., hex., oct. y bin., NaN, Infinity, mod. Math y clase Number```
 
-<img src="Recursos/tipo_number.png" width="50%" />
+<img src="../Recursos/tipo_number.png" width="50%" />
 
 ## Funciones, métodos y módulos de **number**
 
@@ -137,8 +137,8 @@ random()
   - La asignación múltiple puede utilizar valores por defecto.
 - La asignación múltiple se denomina también desestructurada (*destructuring*)
 
-<img src="Recursos/spred_rest_01.png" width="50%" />
-<img src="Recursos/spred_rest_02.png" width="26%" />
+<img src="../Recursos/spred_rest_01.png" width="50%" />
+<img src="../Recursos/spred_rest_02.png" width="26%" />
 
 ```Operador spred/rest(...x)```
 - Tiene semántica **spread** (esparcir) o **rest** (resto) dependiendo del contexto.
@@ -219,7 +219,7 @@ myFun("one", "two", "three", "four", "five", "six")
 // manyMoreArgs, [three, four, five, six]
 ```
 
-<img src="Recursos/rest.png" width="80%" />
+<img src="../Recursos/rest.png" width="80%" />
 
 ```Objetos ES6+: Literal, multi-asignación y spread/rest (...x)```
 
@@ -327,8 +327,8 @@ x.t => 1 // x accede al mismo
 y.t => 1 // objeto que y
 z.t => undefined
 ```
-<img src="Recursos/referencias_objetos.png" width="30%" />
-<img src="Recursos/referencias_objetos_02.png" width="50%" />
+<img src="../Recursos/referencias_objetos.png" width="30%" />
+<img src="../Recursos/referencias_objetos_02.png" width="50%" />
 
 **Parámetros por referencia**
 - Parámetros de una función
@@ -338,7 +338,7 @@ z.t => undefined
   - Esta modificación **se verá a través de todas la referencias** del objeto.
     - Los cambios realizados **dentro** de la función, se verán **fuera** de esta.
 
-<img src="Recursos/parametros_referencia.png" width="80%" />
+<img src="../Recursos/parametros_referencia.png" width="80%" />
 
 **Clonar objetos y arrays**
 - Permite obtener copias **no relacionadas** (no habrá efectos laterales entre ambas).
@@ -368,10 +368,10 @@ x.b === y.b;  // true
 - Una clase es un modelo que define un conjunto de variables (atributos) y métodos apropiados para operar con dichos datos.
 - Cada instancia que se crea de la clase es un objeto.
 
-<img src="Recursos/definir_clase.png" width="70%" />
-<img src="Recursos/clase_prototipos_01.png" width="70%" />
-<img src="Recursos/clase_prototipos_02.png" width="70%" />
-<img src="Recursos/clase_prototipos_03.png" width="70%" />
+<img src="../Recursos/definir_clase.png" width="70%" />
+<img src="../Recursos/clase_prototipos_01.png" width="70%" />
+<img src="../Recursos/clase_prototipos_02.png" width="70%" />
+<img src="../Recursos/clase_prototipos_03.png" width="70%" />
 
 **Explicación ampliada de prototipos** [StackOverflow](https://es.stackoverflow.com/questions/2012/qu%c3%a9-son-los-prototipos-en-javascript-y-para-qu%c3%a9-sirven/2022#2022)
 
@@ -489,8 +489,8 @@ chris.isRetired();	  // true
   - No se necesitan mecanismos de exclusión mutua (zonas críticas, monitores, etc)
 - Los eventos se introducen al final de la cola de eventos y se ejecutan en serie empezando por el más antiguo.
 
-<img src="Recursos/diagrama_eventos.png" width="100%" />
-<img src="Recursos/diagrama_eventos_02.png" width="100%" />
+<img src="../Recursos/diagrama_eventos.png" width="100%" />
+<img src="../Recursos/diagrama_eventos_02.png" width="100%" />
 
 **Bloqueo**: problema importante de la programación concurrente.
 - Un programa (o parte) deja de ejecutarse esperando que otro acabe.
@@ -499,7 +499,7 @@ chris.isRetired();	  // true
     - Si un manejador **no finaliza**, no se atienden más eventos y el servidor se **bloquea**.
   - Un manejador **debe finalizar lo más rápido posible**. Así se garantia una pronta atención a los siguientes eventos.
 
-<img src="Recursos/diagrama_eventos_03.png" width="100%" />
+<img src="../Recursos/diagrama_eventos_03.png" width="100%" />
 
 **Eventos periódicos con setInterval(...)**
 - JavaScript tiene funciones para programar eventos temporizados.
@@ -509,5 +509,5 @@ chris.isRetired();	  // true
       - **Manejador o callback**: función ejecutada al ocurrir el evento.
       - **Periodo en milisegundos**: tiempo entre eventos periódicos.
 
-<img src="Recursos/diagrama_eventos_04.png" width="100%" />
-<img src="Recursos/diagrama_eventos_05.png" width="100%" />
+<img src="../Recursos/diagrama_eventos_04.png" width="100%" />
+<img src="../Recursos/diagrama_eventos_05.png" width="100%" />

@@ -16,7 +16,7 @@
 
 **Códigos escapados**
 
-<img src="Recursos/codigos_escapados.png" width="40%" />
+<img src="../Recursos/codigos_escapados.png" width="40%" />
 
 ```Iteradores y bucles: forEach, find-index, filter, map, reduce, for-in, for-of```
 - Iteradores: mecanismo de programación funcional. Equivalente a los bucles.
@@ -178,7 +178,7 @@ add                   // => 35
   - **final de string**: /hoy$/ => reconoce "hoy" al final del string.
   - **cualquier caracter**: /./ => reconoce cualquier caracter.
 
-<img src="Recursos/regex_01.png" width="40%" />
+<img src="../Recursos/regex_01.png" width="40%" />
 
 **Clases y rangos de caracteres**
 - **Clases de caracteres**: patrón con varios caracteres alternativos entre corchetes.
@@ -196,7 +196,7 @@ add                   // => 35
 -   **g**: devuelve array con **todos los match**.
 -   **m**: multilínea, **^**, **$** representan principio y fin de línea.
 
-<img src="Recursos/regex_02.png" width="70%" />
+<img src="../Recursos/regex_02.png" width="70%" />
 
 ```RegExp II: Repetición y alternativa```
 

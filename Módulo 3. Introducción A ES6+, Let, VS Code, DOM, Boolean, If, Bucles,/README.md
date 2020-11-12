@@ -73,4 +73,4 @@ Variables y funciones externas son visibles en el bloque de la función.
 - Siempre que no sean tapadas con otras declaraciones locales **del mismo nombre**.
   - Una declaración **local** tapa a una **global** del mismo nombre.
 
-<img src="Recursos/js_es6_declaraciones_locales_funcion_ambito.png" width="40%" />
+<img src="../Recursosjs_es6_declaraciones_locales_funcion_ambito.png" width="40%" />

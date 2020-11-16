@@ -62,6 +62,7 @@ add;  // => 35   (7+4+2+23)
   - Retorna un **nuevo array** sin los elementos para los que la función retorna false.
 - **map((elem, i, a) => { ... })**
   - Retorn un nuevo array sustituyendo cada elemento por el que retorna la función.
+    - **elem** es el nombre que se le da a cada item iterable, como en el *for* o *while* cuando se ponía el nombre del array + su índice, en este caso se sustituye por **elem**.
 
 ```javascript
 [7, 4, 1, 23].find(elem => elem < 3);      // => 1

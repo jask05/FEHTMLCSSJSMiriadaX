@@ -196,4 +196,16 @@ From y to son dos atajos para decir 0% y 100%. Ambas maneras son posibles.
 
 ## [Tema 7. Anime.JS](https://www.youtube.com/watch?v=AF9HRgmoWHU)
 
+## [Videotutorial P2P I. Saludo y explicación](https://www.youtube.com/watch?v=vGk8VBubnmA)
+
+## [Videotutorial P2P II. Swiper y navegación](https://www.youtube.com/watch?v=8cpl-35w1DE)
+
+## [Videotutorial P2P III. Animaciones entre pantallas](https://www.youtube.com/watch?v=O3PLFfklrio)
+
+## [Videotutorial P2P IV. Animación ventanas modales](https://www.youtube.com/watch?v=Z1Miasst76w)
+
+## [Videotutorial P2P V. Game over](https://www.youtube.com/watch?v=wSK1qFRZIDI)
+
+## [Videotutorial P2P VI. Despedida y siguientes pasos](https://www.youtube.com/watch?v=gQuYRwC7_vc)
+
 ## [Ejercicio P2P. Enunciado y material de apoyo](https://www.youtube.com/watch?v=iEYKiYKOILM)

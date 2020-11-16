@@ -108,7 +108,7 @@ console.log(`Nombre: ${nombre}. Años: ${edad}`); // Destructuring
 - **Controlador**: orquesta la respuesta a una petición del usuario.
   - Normalmente, busca los datos, los formatea con la Vista y los muestra.
 
-![MVC](Recursos/mvc.png)
+<img src="../Recursos/mvc.png" width="80%" />
 
 **Plantilla (o interpolación) de strings**
 - Plantilla de string: delimita el texto con comillas invertidas

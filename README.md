@@ -242,3 +242,27 @@ Bibliografía
 - Diseñadoras
   - [Youtube - Sara Soueidan](https://www.youtube.com/watch?v=lf7L8X6ZBu8)
   - [Youtube - Sarah Drasner](https://www.youtube.com/watch?v=4laPOtTRteI)
+
+## PWA
+
+- https://developers.google.com/web/progressive-webapps/checklist 
+- https://developers.google.com/web/android/trusted-web-activity
+- https://medium.com/@firt/google-play-store-now-open-forprogressive-web-apps-ec6f3c6ff3cc
+- https://www.genbeta.com/desarrollo/trusted-web-activity-puntoinflexion-desarrolladores-puedan-distribuir-sus-progressive-web-appgoogle-play
+- https://developers.google.com/web/tools/lighthouse/
+- https://www.pwabuilder.com/
+- https://components.pwabuilder.com/
+- https://www.pwabuilder.com/generate
+- https://www.pwabuilder.com/serviceworker
+- https://github.com/pwa-builder/pwa-starter 
+- https://pwa-starter-demo.glitch.me/
+- https://glitch.com/
+- https://pwa.rocks/
+- http://progressivewebapproom.com/
+- https://pwa-directory.appspot.com/
+- https://app.starbucks.com/
+- https://twitter.com/home
+- https://app.ft.com/
+- https://pokedex.org/
+- [Web App Manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+- [Service Workers](https://developer.mozilla.org/es/docs/Web/API/Service_Worker_API)

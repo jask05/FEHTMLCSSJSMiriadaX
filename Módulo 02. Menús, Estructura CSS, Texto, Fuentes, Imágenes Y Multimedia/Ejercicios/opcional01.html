@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ejercicio estructura</title>
+    <style type="text/css">
+        body {
+            margin: 0 auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header,
+        article,
+        nav,
+        aside,
+        footer {
+            border: 1px solid #000;
+        }
+
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 0.7fr 9fr 0.7fr;
+            grid-template-areas:
+                "h h h h h h h h h h h h"
+                "n n n a a a a a a s s s"
+                "f f f f f f f f f f f f";
+            grid-gap: 2px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: h;
+            background-color: beige;
+            font-size: 2rem;
+            line-height: 60px;
+        }
+
+        article {
+            grid-area: a;
+            background-color: blanchedalmond;
+        }
+
+        aside {
+            grid-area: s;
+            background-color: cornsilk;
+        }
+
+        nav {
+            grid-area: n;
+            background-color: cornsilk;
+        }
+
+        footer {
+            grid-area: f;
+            background-color: darkkhaki;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>header</header>
+        <article>article</article>
+        <nav>nav</nav>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>

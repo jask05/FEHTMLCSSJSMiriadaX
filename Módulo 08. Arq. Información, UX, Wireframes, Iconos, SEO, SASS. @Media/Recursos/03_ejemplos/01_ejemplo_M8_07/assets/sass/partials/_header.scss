@@ -1,0 +1,41 @@
+$base: 0.5rem;
+$bodyColor: #333;
+$hover: #d4d4d4;
+$bodyFont: Arial, sans-serif;
+
+* {
+    border: 1px solid pink;
+
+}
+html,
+body {
+    font-size: $base * 2;
+    line-height: $base * 3;
+    color: $bodyColor;
+    font-family: $bodyFont;
+    margin: 0;
+}
+
+h1 {
+    color: $corporateColor;
+}
+
+header {
+    padding: $base;
+    nav {
+        display: flex;
+        ul {
+            li {
+                margin-left: $base * 2;
+
+                &:hover {
+                    background-color: $hover;
+                }
+
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

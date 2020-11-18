@@ -11,13 +11,14 @@
 @import "partials/modals";
 
 
-$pColor: "#596466";
+$pColor: #596466;
+$btnMainColor: #F262C1;
 
-* {
-    &:not(a) {
-        border: 1px solid pink;
-    }
-}
+// * {
+//     &:not(a) {
+//         border: 1px solid pink;
+//     }
+// }
 
 body {
     background-color: #C4C4C4;
@@ -27,17 +28,65 @@ h1 {
     color: #596466;
 }
 
+#splash_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(126,126,126);
+    background: radial-gradient(circle, rgba(126,126,126,1) 31%, rgba(193,193,193,1) 100%);
+    
+    h1 {
+        color: white;
+        font-size: 3em;
+    }
+}
+
+span.mdi {
+    font-size: 2em;
+    padding: 10px 10px;
+    display: block;
+    border-radius: 5px;
+    
+    &::before {
+        color: white;
+    }
+}
+
+.foot_navigation {
+    text-align: center;
+    
+    ul {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        
+        li {
+            margin: 10px 10px;
+            float: left;
+            background-color: darken($btnMainColor, 25%);
+
+            &:hover {
+                background-color: lighten($btnMainColor, 5%);
+            }
+        }
+    }
+}
+
 /* 
 Botones
 */
 
 .btn_main {
-    background-color: #F262C1;
+    background-color: $btnMainColor;
     color: #FFF;
     padding: 10px 20px;
     width: 100%;
     max-width: 100vw;
     border-radius: 5px;
+
+    &:hover {
+        background-color: darken($btnMainColor, 25%);
+    }
 }
 
 
@@ -77,6 +126,23 @@ Botones
     .lboard {
         flex-basis: 100%;
         width: 100%;
+        text-align: center;
+
+        div.lboard_item {
+            display: flex;
+            flex-direction: row;
+            flex-grow: flex;
+            justify-content: space-between;
+            padding: 1rem;
+
+            &.lboard_item_name {
+                width: 75%;
+            }
+
+            &.lboard_item_p {
+                width: 25%;
+            }
+        }
     }
 
     footer {
@@ -93,8 +159,38 @@ Botones
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        .score {
+            // flex-basis: 20%;
+            color: red;
+            height: 50px;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .lifes {
+            color: green;
+        }
     }
     .game {
         flex-basis: 100%;
         width: 100%;
+    }
+
+    #settings_page {
+        .settings {
+            margin: 0 0 $base * 16;
+            display: flex;
+            flex-direction: column;
+    
+            .setting {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                .settin_toggle {
+                    flex-basis: 20%;
+                }
+            }
+        }
     }
